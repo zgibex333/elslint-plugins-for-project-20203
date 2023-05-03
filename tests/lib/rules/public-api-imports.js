@@ -33,6 +33,17 @@ ruleTester.run("public-api-imports", rule, {
       code: "import { classNames } from '@/entities/Article'",
       errors: [],
     },
+    {
+      options: [
+        {
+          alias: "@",
+          testFilePatterns: ["**/*.test.ts"],
+        },
+      ],
+      filename: "C:\\work\\ulbi\\eslint-custom-plugins\\plugin1\\index.test.ts",
+      code: "import { classNames } from '@/entities/Article/testing'",
+      errors: [],
+    },
   ],
 
   invalid: [
