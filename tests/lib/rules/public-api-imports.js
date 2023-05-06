@@ -56,10 +56,10 @@ ruleTester.run("public-api-imports", rule, {
       ],
       errors: [
         {
-          message:
-            "Absolute imports are allowed only from public API (except shared layer)",
+          messageId: "PUBLIC_ERROR",
         },
       ],
+      output: "import { classNames } from '@/entities/Article'",
     },
   ],
 });
