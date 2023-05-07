@@ -38,6 +38,7 @@ ruleTester.run("path-checker", rule, {
             "Imports should be relative in terms of same slice. Change it, Son!",
         },
       ],
+      output: "import { classNames } from './Article/classNames/classNames'",
     },
     {
       filename: "C:\\work\\ulbi\\src\\entities\\Article",
@@ -48,6 +49,7 @@ ruleTester.run("path-checker", rule, {
             "Imports should be relative in terms of same slice. Change it, Son!",
         },
       ],
+      output: "import { classNames } from './Article/classNames/classNames'",
     },
   ],
 });
